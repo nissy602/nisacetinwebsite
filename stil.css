@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5dc; 
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #4b2c20; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 4px solid #d4a017; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #d4a017;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+
+a {
+    color: #8b0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    color: #4b2c20;
+    border-bottom: 2px solid #d4a017;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+
+form {
+    background-color: #fff;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4b2c20;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d4a017;
+}
+
+
+figure {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+figure img {
+    width: 150px;
+    height: auto;
+    border: 3px solid #d4a017;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+figure img:hover {
+    transform: scale(1.1);
+}
+
+figcaption {
+    font-weight: bold;
+    margin-top: 5px;
+}
