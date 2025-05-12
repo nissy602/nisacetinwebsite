@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <!-- Tarayıcı sekmesinde ve arama motoru sonuçlarında görünecek sayfa başlığı -->
+  <title>Golden Snitch Yakala</title>
+  <!-- Css Dosya Bağlantısı -->
+  <link rel="stylesheet" href="stil.css"/>
+</head>
+<body>
+  <!-- Sayfanın Üst Bölümü -->
+  <header>
+    <nav>
+        <!-- Sayfa Başlığı ve Navbar(Menü) -->
+      <h1>Golden Snitch'i Yakala</h1>
+      <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="karakterler.html">Karakterler</a></li>
+        <li><a href="buyuler.html">Büyüler</a></li>
+        <li><a href="hogwarts.html">Büyücü Kaydı</a></li>
+        <li><a href="binalar.html">Binalar</a></li>
+        <li><a href="yerler.html">Sihirli Yerler</a></li>
+        <li><a href="iksir.html">İksirini Bul!</a></li>
+        <li><a href="snitch.html">Snitch'i Yakala!</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Sayfanın ana içerik bölümü -->
+  <main>
+     <!-- Oyun alanını kapsayan ana konteyner -->
+    <section id="game-container">
+      <!-- Kalan süre bilgisini gösteren sayaç -->
+      <div id="timer">Kalan Süre: <span id="time">30</span>s</div>
+      <!-- Kullanıcının yakaladığı snitch sayısını gösteren skor bilgisi -->
+      <div id="scoreBoard">Skor: <span id="score">0</span> / 20</div>
+       <!-- Başlat Butonu -->
+      <button id="startBtn">Oyunu Başlat</button>
+      <!-- Snitch’in rastgele hareket edeceği oyun alanı -->
+      <div id="gameArea">
+        <!-- Snitch Görseli -->
+        <img id="snitch"
+             src="https://static.wikia.nocookie.net/harrypotter/images/b/b9/Golden_Snitch..png"
+             alt="Golden Snitch">
+      </div>
+      <!-- Oyunda gösterilecek bilgilendirme mesajı -->
+      <div id="message"></div>
+    </section>
+  </main>
+  <!-- Js Dosya Bağlantısı -->
+  <script src="snitch.js" defer></script>
+</body>
+</html>

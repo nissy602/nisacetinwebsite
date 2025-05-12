@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tarayıcı sekmesinde ve arama motoru sonuçlarında görünecek sayfa başlığı -->
+  <title>Favori İksirini Bul!</title>
+  <!-- Css Dosya Bağlantısı -->
+  <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+  <!-- Sayfanın Üst Bölümü -->
+  <header>
+    <nav><!-- Sayfa Başlığı ve Navbar(Menü) -->
+      <h1>Favori İksirini Bul!</h1>
+      <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="karakterler.html">Karakterler</a></li>
+        <li><a href="buyuler.html">Büyüler</a></li>
+        <li><a href="hogwarts.html">Büyücü Kaydı</a></li>
+        <li><a href="binalar.html">Binalar</a></li>
+        <li><a href="yerler.html">Sihirli Yerler</a></li>
+        <li><a href="iksir.html">İksirini Bul!</a></li>
+        <li><a href="snitch.html">Snitch'i Yakala!</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Sayfanın ana içerik bölümü -->
+  <main>
+    <h2>Favori İksirini Bul!</h2>
+  <!-- Favori İksir Oyunu formdan alınan yanıtlar JS ile değerlendirilir ve sonuç modal bir pencerede kullanıcıya sunulur -->
+    <form id="iksirForm">
+      <p>1. En çok hangisini tercih edersin?<br>
+        <select id="ozellik">
+          <option value="">--Seçiniz--</option>
+          <option value="sans">Şans</option>
+          <option value="ask">Aşk</option>
+          <option value="gizlenme">Gizlenme</option>
+          <option value="zeka">Zeka</option>
+          <option value="huzur">Huzur</option>
+          <option value="mutluluk">Mutluluk</option>
+        </select>
+      </p>
+
+      <p>2. Risk almayı sever misin?<br>
+        <label><input type="radio" name="risk" value="evet"> Evet</label>
+        <label><input type="radio" name="risk" value="hayir"> Hayır</label>
+      </p>
+
+      <p>3. En çok zaman geçirmek istediğin yer?<br>
+        <select id="mekan">
+          <option value="">--Seçiniz--</option>
+          <option value="kutuphane">Kütüphane</option>
+          <option value="orman">Yasak Orman</option>
+          <option value="parti">Balo Salonu</option>
+          <option value="laboratuvar">İksir Odası</option>
+        </select>
+      </p>
+
+      <p>4. Duygusal mı mantıklı mı karar verirsin?<br>
+        <label><input type="radio" name="karar" value="duygusal"> Duygusal</label>
+        <label><input type="radio" name="karar" value="mantikli"> Mantıklı</label>
+      </p>
+
+      <button type="submit">İksirimi Göster</button>
+    </form>
+
+    <!-- Modal -->
+    <div id="iksirModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3 id="iksirBaslik"></h3>
+        <img id="iksirResim" src="" alt="İksir Görseli">
+        <p id="iksirAciklama"></p>
+      </div>
+    </div>
+  </main>
+  <!--Js Dosya Bağlantısı -->
+  <script src="iksir.js"></script>
+</body>
+</html>
