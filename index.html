@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tarayıcı sekmesinde ve arama motoru sonuçlarında görünecek sayfa başlığı -->
+    <title>Harry Potter Evreni</title>
+     <!-- Css Dosya Bağlantısı -->
+    <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+
+    <!-- Sayfanın Üst Bölümü -->
+    <header>
+        <nav>
+             <!-- Sayfa Başlığı ve Navbar(Menü) -->
+            <h1>Harry Potter Evrenine Hoş Geldiniz</h1>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="karakterler.html">Karakterler</a></li>
+        <li><a href="buyuler.html">Büyüler</a></li>
+        <li><a href="hogwarts.html">Büyücü Kaydı</a></li>
+        <li><a href="binalar.html">Binalar</a></li>
+        <li><a href="yerler.html">Sihirli Yerler</a></li>
+        <li><a href="quidditch.html">Quidditch</a></li>
+        <li><a href="iksir.html">İksirini Bul!</a></li>
+        <li><a href="snitch.html">Snitch'i Yakala!</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <!-- Sayfanın ana içerik bölümü -->
+    <main>
+        <!-- Sitenin Kısa Açıklaması -->
+        <p>Bu web sitesi, büyülü Harry Potter evreni hakkında bilgiler içermektedir.</p>
+        <!-- ImageMap ile Hogwarts logosuna tıklandığında Binalar sayfasına yönlendiren alan -->
+        <img src="https://cf.kizlarsoruyor.com/a103133/primary-share.png?25" usemap="#harita" alt="Harry Potter Haritası" width="800">
+
+        <map name="harita">
+            <area shape="circle" coords="200,290,250" href="binalar.html" alt="Binalar">
+        </map>
+    </main>
+
+</body>
+</html>
+
